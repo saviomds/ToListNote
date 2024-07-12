@@ -79,7 +79,6 @@ header {
 
 @media screen and (max-width: 768px) {
   body {
-    height: 180vh;
     position: relative;
     top: 0px;
     background-color: rgb(45, 45, 45);
