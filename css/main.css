@@ -100,8 +100,7 @@ header {
     margin: 5px;
   }
   header {
-    background-color: rgba(26, 26, 26, 0.19);
-
+    background-color: rgb(45, 45, 45);
     position: relative;
     top: 100px;
     height: 60vh;
@@ -123,5 +122,14 @@ header {
   }
   .list ul li {
     text-align: start;
+  }
+  .error {
+    max-width: 295px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: start;
+    position: relative;
+    left: 3px;
   }
 }
