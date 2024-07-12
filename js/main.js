@@ -11,9 +11,6 @@ document.querySelector("#addingList").addEventListener("click", () => {
   addinglist();
 });
 
-// Clear All
-clearAll.addEventListener("click", () => {});
-
 // refactor Create Element
 function addinglist() {
   // Check Input Valid
@@ -26,6 +23,8 @@ function addinglist() {
     itemsList.appendChild(list);
     // error none
     document.querySelector(".error").style.display = "none";
+    document.querySelector("#inputValue").value = "";
+    Ad;
   }
 }
 
@@ -34,3 +33,9 @@ function style() {
   search.style.display = "none";
   addList.style.display = "block";
 }
+
+// Clear All
+clearAll.addEventListener("click", () => {
+  // Remove all list items
+  document.querySelector(".items-list").innerHTML = "";
+});

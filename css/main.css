@@ -21,7 +21,9 @@ header {
   color: #fff;
   font-size: 30px;
 }
-
+.addList {
+  padding-top: 60px;
+}
 .search input,
 .search button,
 .addlistForm input,
@@ -79,6 +81,9 @@ header {
   text-align: start;
   position: relative;
   left: 35px;
+}
+.addList button#add {
+  background-color: #0079b6;
 }
 @media screen and (max-width: 360px) {
   .addList button {
