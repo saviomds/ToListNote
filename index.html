@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>To do List</h1>
+      </div>
+      <div class="error"></div>
+      <div class="addlistForm" hidden>
+        <input type="text" id="inputValue" placeholder="Add List" />
+        <button type="submit" id="addingList">Add List</button>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Search" />
+        <button type="submit">Search</button>
+      </div>
+      <div class="list">
+        <ul class="items-list">
+          <li class="list">Apple</li>
+          <li class="list">Mangoes</li>
+        </ul>
+      </div>
+      <div class="addList">
+        <button type="submit" id="add">add</button>
+        <button type="submit">note</button>
+        <button type="submit" class="clean">Clear All</button>
+      </div>
+    </header>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
