@@ -42,7 +42,10 @@ header {
   color: #fff;
   padding: 5px;
 }
-
+.addList {
+  position: relative;
+  bottom: 20px;
+}
 .addList button {
   float: right;
   padding: 10px;
@@ -56,6 +59,7 @@ header {
   background-color: #000000;
   border-radius: 5px;
   cursor: pointer;
+  left: -30px;
 }
 .addList button:active {
   opacity: 30%;
@@ -119,6 +123,7 @@ header {
     background-color: #000000;
     border-radius: 5px;
     cursor: pointer;
+    left: 10px;
   }
   .list ul li {
     text-align: start;
