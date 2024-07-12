@@ -90,16 +90,14 @@ header {
     background-color: rgb(45, 45, 45);
   }
   .search input,
-  .search button {
+  .search button,
+  .addlistForm button {
     width: 100%;
     margin: 5px;
   }
   .addlistForm input {
     width: 85%;
     margin: 5px;
-  }
-  .addlistForm button {
-    width: 100%;
   }
   header {
     background-color: rgba(26, 26, 26, 0.19);
