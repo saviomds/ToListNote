@@ -44,13 +44,13 @@ header {
 }
 
 .addList button {
-  float: right;
-  padding: 20px;
+  float: left;
+  padding: 5px;
   position: relative;
   top: -40px;
   color: #fff;
   border: none;
-  margin: 5px;
+  margin: 2px;
   font-size: 20px;
   text-transform: capitalize;
   background-color: #000000;
@@ -76,7 +76,13 @@ header {
   position: relative;
   left: 35px;
 }
+@media screen and (max-width: 360px) {
+  .addList button {
+    padding: 20px;
 
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     position: relative;
