@@ -13,18 +13,15 @@ document.querySelector("#addingList").addEventListener("click", () => {
 
 // refactor Create Element
 function addinglist() {
+  const input = document.querySelector("#inputValue");
+
   // Check Input Valid
-  if (document.querySelector("#inputValue").value === "") {
-    document.querySelector(".error").textContent = "NO Value";
-  } else {
-    const itemsList = document.querySelector(".items-list");
-    const list = document.createElement("li");
-    list.textContent = document.querySelector("#inputValue").value;
-    itemsList.appendChild(list);
-    // error none
-    document.querySelector(".error").style.display = "none";
-    document.querySelector("#inputValue").value = "";
-    Ad;
+  if (input.value === "") {
+    const error = document.querySelector(".error");
+    error.textContent = "No Value";
+    setTimeout(() => {
+      error.style.display = "none";
+    }, 3000);
   }
 }
 
@@ -39,3 +36,23 @@ clearAll.addEventListener("click", () => {
   // Remove all list items
   document.querySelector(".items-list").innerHTML = "";
 });
+
+(() => {
+  fetch("/listData").then((response) => {
+    response.json().then((data) => {
+      const itemsList = document.querySelector(".items-list");
+      itemsList.innerHTML = "";
+
+      data.forEach((user) => {
+        const list = document.createElement("li");
+        list.textContent = user.inputVal;
+        list.addEventListener("click", () => {
+           
+          
+        });
+
+        itemsList.appendChild(list);
+      });
+    });
+  });
+})();

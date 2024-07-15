@@ -29,20 +29,17 @@
       <div class="header">
         <h1>To do List</h1>
       </div>
-      <div class="error"></div>
-      <div class="addlistForm" hidden>
-        <input type="text" id="inputValue" placeholder="Add List" />
+      <div class="error" id="errorContainer"></div>
+      <form method="post" class="addlistForm" hidden>
+        <input type="text" name="inputVal" placeholder="Add List" />
         <button type="submit" id="addingList">Add List</button>
-      </div>
+      </form>
       <div class="search">
         <input type="search" placeholder="Search" />
         <button type="submit">Search</button>
       </div>
       <div class="list">
-        <ul class="items-list">
-          <li class="list">Apple</li>
-          <li class="list">Mangoes</li>
-        </ul>
+        <ul class="items-list"></ul>
       </div>
       <div class="addList">
         <button type="submit" id="add">add</button>
