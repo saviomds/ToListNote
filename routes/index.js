@@ -31,10 +31,15 @@ router.post("/", (req, res) => {
 });
 
 router.get("/", (req, res) => {
-  User.find().catch((err) => {
-    console.error("Error fetching users:", err);
-    res.status(500).json({ error: "Internal Server Error" });
-  });
+  User.find()
+    .then((users) => {
+      // Assuming index.html is in the public directory
+      res.sendFile("index.html", { root: "public" });
+    })
+    .catch((err) => {
+      console.error("Error fetching users:", err);
+      res.status(500).json({ error: "Internal Server Error" });
+    });
 });
 
 router.get("/listData", (req, res) => {
